@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
 
         Bar horbar3 = (Bar) findViewById(R.id.horbar3);
         horbar3.setTotal(350);
-        horbar3.updateBar(150, 200, "In favor", "Againts");
+        horbar3.updateBar(150, 200, "In favor", "Against");
 
     }
 

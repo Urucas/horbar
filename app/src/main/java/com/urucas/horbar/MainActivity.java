@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
 
         horbar1 = (Bar) findViewById(R.id.horbar1);
         horbar1.setTotal(350);
-        horbar1.updateBar(300, 50);
+        horbar1.updateBar(236, 114, String.valueOf(236), String.valueOf(114));
     }
 
 

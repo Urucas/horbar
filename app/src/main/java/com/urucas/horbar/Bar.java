@@ -86,7 +86,7 @@ public class Bar extends LinearLayout {
 
         b2TextView.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.FILL_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT, percent1));
+                LinearLayout.LayoutParams.WRAP_CONTENT, percent2));
 
         b1TextView.setText(s1);
         b2TextView.setText(s2);

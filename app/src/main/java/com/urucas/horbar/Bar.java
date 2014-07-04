@@ -58,6 +58,9 @@ public class Bar extends LinearLayout {
         percent1 = 1 - ((float)((int)(percent1*100)))/100;
         percent2 = 1 - ((float)((int)(percent2*100)))/100;
 
+        Log.i("percent1", String.valueOf(percent1));
+        Log.i("percent2", String.valueOf(percent2));
+
         b1TextView.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.FILL_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT, percent1));
@@ -74,11 +77,14 @@ public class Bar extends LinearLayout {
 
         b1val = b1; b2val = b2;
 
-        float percent1 = total*b1val/100;
-        float percent2 = total*b2val/100;
+        float percent1 = b1val == 0 ? 0 : b1val/total;
+        float percent2 = b2val == 0 ? 0 : b2val/total;
 
         percent1 = 1 - ((float)((int)(percent1*100)))/100;
         percent2 = 1 - ((float)((int)(percent2*100)))/100;
+
+        Log.i("percent1", String.valueOf(percent1));
+        Log.i("percent2", String.valueOf(percent2));
 
         b1TextView.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.FILL_PARENT,

@@ -8,10 +8,16 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
+    private Bar horbar1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        horbar1 = (Bar) findViewById(R.id.horbar1);
+        horbar1.setTotal(350);
+        horbar1.updateBar(300, 50);
     }
 
 

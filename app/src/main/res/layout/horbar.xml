@@ -8,9 +8,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:background="#ff0000"
         android:textColor="#ffffff"
+        android:padding="6dp"
         android:text="50%"
     />
 
@@ -19,11 +20,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:background="#00ff00"
+        android:padding="6dp"
         android:textColor="#ffffff"
         android:text="50%"
         />
 
-
 </merge>
+

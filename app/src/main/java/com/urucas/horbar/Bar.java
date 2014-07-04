@@ -2,6 +2,7 @@ package com.urucas.horbar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -16,6 +17,9 @@ import android.widget.TextView;
 
 public class Bar extends LinearLayout {
 
+    private final TextView b1;
+    private final TextView b2;
+
     public Bar(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -26,9 +30,11 @@ public class Bar extends LinearLayout {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.horbar, this, true);
 
-        TextView title = (TextView) getChildAt(0);
-        title.setText("prueba");
+        b1 = (TextView) findViewById(R.id.horbar_b1);
+        b2 = (TextView) findViewById(R.id.horbar_b2);
 
+        b1.setBackgroundColor(Color.parseColor("#8bc34a"));
+        b2.setBackgroundColor(Color.parseColor("#ED2939"));
     }
 
 }
